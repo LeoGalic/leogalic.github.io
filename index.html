@@ -14,7 +14,7 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
   body {
     font: 20px Montserrat, sans-serif;
@@ -140,71 +140,56 @@ form.example::after {
    
    
    
-   
-   
    body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
   overflow: hidden;
   background-color: #333;
+  position: relative;
 }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
+.topnav #myLinks {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
   display: block;
-  text-align: left;
 }
 
-.dropdown-content a:hover {
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
   background-color: #ddd;
+  color: black;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
+   
+  
    
    
    
@@ -231,28 +216,41 @@ form.example::after {
         <span class="icon-bar"></span>                        
       </button>
   
-    </div>
-   
-      <div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">News</a>
-       <a href="contact.html">Contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">Livno Points 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="town.html">Town</a>
-      <a href="nature.html">Nature</a>
-     <a href="landmark.html">Landmarks</a>
-      <a href="rivers.html">Rivers</a>
-      <a href="horses.html">Horses</a>
-      <a href="field.html">Feild</a>
      
-      <a href="map.html">Livno Map</a>
-    </div>
-  </div> 
+     
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+     
+ 
     </div>
   </div>
 </nav>
