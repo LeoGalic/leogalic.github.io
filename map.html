@@ -1,52 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+ 
+  <title>LiNature</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #BAEBA6; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #515853; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+
+<nav class="navbar navbar-default">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">WebSiteName</a>
+
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
       </ul>
     </div>
   </div>
 </nav>
-  
-<div class="container">
-  <h3>Collapsible Navbar</h3>
-  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+
+
+<div class="container-fluid bg-1 text-center">
+  <a href="index.html">
+  <img src="coollogo_com-21213931.png" class="img-responsive " style="display:inline" alt="" width="350" height="350">
+ </a>
+  <h3>Livno Nature Online Gallery</h3>
 </div>
+
+
+
+
+<div class="container-fluid bg-3 text-center">    
+  <h1 class="margin">Landmarks</h1><br>
+  <p>Kao i u drugim mjestima u Bosni i Hercegovini i u okolici Livna arheološka iskopavanja su otkrila ostatke ljudskih naseobina stare preko 4,000 godina. Mnoga od ovih nalazišta locirana su u Dumanu, velikoj kraškoj pećini iz koje izvire rijeka Bistrica.</p>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Old muslim cemetery</p>
+      <img src="img1571599808143.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h5>20.10.2019</h5>
+    </div>
+    <div class="col-sm-4"> 
+   <p>Statute in honor of King Tomislav</p>
+      <img src="img1571814951002.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h5>N/A</h5>
+    </div>
+    <div class="col-sm-4"> 
+      <p>Vujadin's Tower</p>
+      <img src="img1571814905855.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <h5>N/A</h5>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid bg-4 text-center">
+  <p</p> 
+</footer>
 
 </body>
 </html>
